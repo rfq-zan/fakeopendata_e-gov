@@ -10,7 +10,7 @@
     <!-- Navbar -->
     <header class="bg-white shadow-md">
         <div class="container flex items-center justify-between px-6 py-4 mx-auto">
-            <h1 class="text-xl font-bold text-blue-600">FakeOpenData Web</h1>
+            <h1 class="text-xl font-bold text-blue-600">FakeOpenData Portal</h1>
             <p class="text-sm italic text-gray-500">Empowering insight through open information</p>
 
             <button id="mobile-menu-button" class="p-2 md:hidden">

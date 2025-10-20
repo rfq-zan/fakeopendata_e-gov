@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FakeOpenData Web - Datasets</title>
+    <title>FakeOpenData Portal - Datasets</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="text-gray-900 bg-gray-50">
