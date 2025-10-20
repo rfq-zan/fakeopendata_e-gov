@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OpenData Web - About</title>
+    <title>FakeOpenData Web - About</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="text-gray-900 bg-gray-50">
     <!-- Navbar -->
     <header class="bg-white shadow-md">
         <div class="container flex items-center justify-between px-6 py-4 mx-auto">
-            <h1 class="text-xl font-bold text-blue-600">OpenData Web</h1>
+            <h1 class="text-xl font-bold text-blue-600">FakeOpenData Web</h1>
             <p class="text-sm italic text-gray-500">Empowering insight through open information</p>
 
             <button id="mobile-menu-button" class="p-2 md:hidden">

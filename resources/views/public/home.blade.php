@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DataHub Portal - Open Government Data</title>
+    <title>FakeOpenData - Open Government Data</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -63,7 +63,7 @@
                         </svg>
                     </div>
                     <div class="hidden md:block">
-                        <h1 class="text-xl font-bold">DataHub Portal</h1>
+                        <h1 class="text-xl font-bold">FakeOpenData Portal</h1>
                         <p class="text-xs text-muted-foreground">Open Government Data</p>
                     </div>
                 </a>
@@ -627,7 +627,7 @@
                 </div>
 
                 <div class="pt-8 mt-12 text-sm text-center border-t text-muted-foreground">
-                    <p>&copy; 2025 DataHub Portal. All rights reserved. Licensed under Open Data Commons.</p>
+                    <p>&copy; 2025 FakeOpenData. All rights reserved. Licensed under Open Data Commons.</p>
                 </div>
             </div>
         </footer>
