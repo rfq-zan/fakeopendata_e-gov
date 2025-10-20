@@ -11,9 +11,8 @@
 
     <!-- Sidebar Navigation -->
     <aside class="flex flex-col w-64 min-h-screen p-4 bg-violet-800 text-violet-100">
-        <!-- Top Section -->
         <div>
-            <div class="mb-8 text-2xl font-bold text-white">OpenData Portal</div>
+            <div class="mb-8 text-2xl font-bold text-white">FakeOpenData Portal</div>
             <nav>
                 <ul>
                     <li class="mb-2">
@@ -57,7 +56,6 @@
 
     <!-- Main Content -->
     <main class="flex-1 p-8">
-        <!-- Header -->
         <div class="flex items-center justify-between mb-8">
             <h1 class="text-3xl font-bold text-gray-800">Manage Datasets</h1>
             <a href="#" class="flex items-center px-4 py-2 text-white rounded-lg bg-violet-600 hover:bg-violet-700">

@@ -13,7 +13,7 @@
     <aside class="flex flex-col w-64 min-h-screen p-4 bg-violet-800 text-violet-100">
         <!-- Top Section -->
         <div>
-            <div class="mb-8 text-2xl font-bold text-white">OpenData Portal</div>
+            <div class="mb-8 text-2xl font-bold text-white">FakeOpenData Portal</div>
             <nav>
                 <ul>
                     <li class="mb-2">

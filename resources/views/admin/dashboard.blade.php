@@ -12,7 +12,7 @@
     <!-- Sidebar -->
     <aside class="flex flex-col w-64 min-h-screen p-4 bg-violet-800 text-violet-100">
         <div>
-            <div class="mb-8 text-2xl font-bold text-white">OpenData Portal</div>
+            <div class="mb-8 text-2xl font-bold text-white">FakeOpenData Portal</div>
             <nav>
                 <ul>
                     <li class="mb-2">
@@ -152,7 +152,6 @@
             </div>
         </div>
     </main>
-
     <script>
         const ctx = document.getElementById('userChart').getContext('2d');
         const userChart = new Chart(ctx, {

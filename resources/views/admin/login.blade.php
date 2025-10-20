@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Admin Login - OpenData Portal</title>
+    <title>Admin Login - FakeOpenData Portal</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -18,7 +18,7 @@
         <!-- Branding Section -->
         <div class="items-center justify-center hidden p-12 text-white lg:flex lg:w-1/2 bg-gradient-to-br from-indigo-600 to-indigo-800">
             <div class="text-center">
-                <h1 class="mb-4 text-5xl font-bold tracking-tight">OpenData Portal</h1>
+                <h1 class="mb-4 text-5xl font-bold tracking-tight">FakeOpenData Portal</h1>
                 <p class="text-lg text-indigo-200">Secure Administrator Access</p>
             </div>
         </div>
@@ -70,7 +70,7 @@
                     </form>
                 </div>
                  <p class="mt-6 text-sm text-center text-gray-500">
-                    &copy; 2025 OpenData Portal. All rights reserved.
+                    &copy; 2025 FakeOpenData Portal. All rights reserved.
                 </p>
             </div>
         </div>
