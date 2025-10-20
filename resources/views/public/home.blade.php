@@ -56,7 +56,6 @@
     <header class="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur">
         <div class="container px-4 mx-auto">
             <div class="flex items-center justify-between h-16">
-                <!-- Logo -->
                 <a href="/" class="flex items-center space-x-2">
                     <div class="flex items-center justify-center w-10 h-10 text-white rounded-lg bg-primary">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -69,31 +68,32 @@
                     </div>
                 </a>
 
-                <!-- Desktop Navigation -->
-                <nav class="items-center hidden space-x-6 md:flex">
-                    <a href="/" class="text-sm font-medium transition-colors hover:text-primary">Home</a>
-                    <a href="/datasets" class="text-sm font-medium transition-colors hover:text-primary">Datasets</a>
-                    <a href="/visualizations" class="text-sm font-medium transition-colors hover:text-primary">Visualizations</a>
-                    <a href="apidocs" class="text-sm font-medium transition-colors hover:text-primary">API Docs</a>
-                    <a href="about" class="text-sm font-medium transition-colors hover:text-primary">About</a>
+                <!-- Navbar -->
+            <button id="mobile-menu-button" class="p-2 md:hidden">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+
+            <nav class="items-center hidden space-x-6 md:flex">
+                <a href="/" class="text-sm font-medium transition-colors hover:text-primary">Home</a>
+                <a href="/datasets" class="text-sm font-medium transition-colors hover:text-primary">Datasets</a>
+                <a href="/visualizations" class="text-sm font-medium transition-colors hover:text-primary">Visualizations</a>
+                <a href="apidocs" class="text-sm font-medium transition-colors hover:text-primary">API Docs</a>
+                <a href="about" class="text-sm font-medium transition-colors hover:text-primary">About</a>
+            </nav>
+
+            <div id="mobile-menu" class="hidden md:hidden absolute top-16 left-0 w-full bg-white shadow-md">
+                <nav class="flex flex-col p-4 space-y-2">
+                    <a href="/" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100">Home</a>
+                    <a href="/datasets" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100">Datasets</a>
+                    <a href="/visualizations" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100">Visualizations</a>
+                    <a href="apidocs" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100">API Docs</a>
+                    <a href="about" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100">About</a>
                 </nav>
+            </div>
 
-                <!-- Search Bar - Desktop -->
-                <div class="items-center hidden space-x-2 lg:flex">
-                    <div class="relative w-64">
-                        <svg class="absolute w-4 h-4 -translate-y-1/2 left-2 top-1/2 text-muted-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
-                        </svg>
-                        <input type="search" placeholder="Search datasets..." class="w-full h-10 pl-8 pr-3 border rounded-md border-input focus:outline-none focus:ring-2 focus:ring-ring"/>
-                    </div>
-                </div>
-
-                <!-- Mobile Menu Button -->
-                <button class="p-2 md:hidden">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-                    </svg>
-                </button>
+            <div class="items-center hidden space-x-2 lg:flex"></div>
             </div>
         </div>
     </header>
@@ -632,5 +632,13 @@
             </div>
         </footer>
     </div>
+        <script>
+        const menuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>
