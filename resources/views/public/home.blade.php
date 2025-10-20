@@ -562,7 +562,7 @@
                                 </svg>
                             </div>
                             <div>
-                                <h3 class="text-lg font-bold">DataHub Portal</h3>
+                                <h3 class="text-lg font-bold">FakeOpenData Portal</h3>
                                 <p class="text-xs text-muted-foreground">Open Government Data</p>
                             </div>
                         </div>
