@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController; // Assuming this handles dashboard, login, logout, settings
-// You will likely want separate controllers for Datasets and Users for better organization
+
  use App\Http\Controllers\Admin\DatasetController;
  use App\Http\Controllers\Admin\UserController;
 
@@ -14,6 +14,10 @@ use App\Http\Controllers\AdminController; // Assuming this handles dashboard, lo
 
     Route::get('/datasets', function () {
         return view('public.datasets');
+    });
+
+    Route::get('/download', function () {
+        return view('public.download');
     });
 
     Route::get('/visualizations', function () {

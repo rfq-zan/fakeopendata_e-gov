@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FakeOpenData Web - About</title>
+    <title>Population Dataset - Download</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="text-gray-900 bg-gray-50">
@@ -72,34 +72,60 @@
     </div>
 </header>
 
-    <!-- About Section -->
-    <section class="container px-6 py-20 mx-auto text-center">
-        <h2 class="mb-4 text-3xl font-semibold text-blue-700">About OpenData Web</h2>
-        <p class="max-w-2xl mx-auto mb-8 text-gray-600">
-            OpenData Web is a platform dedicated to providing easy access to public data, enabling users to
-            gain meaningful insights, perform analyses, and build visualizations using real-world information.
+    <main class="container px-6 py-16 mx-auto">
+        <h2 class="mb-6 text-3xl font-semibold text-blue-700">Surabaya Population Dataset 2024</h2>
+
+        <p class="mb-8 leading-relaxed text-gray-700">
+            This dataset provides a detailed overview of Surabaya’s 2024 population, covering age demographics,
+            gender ratios, district-level density, and growth comparisons to previous years.
+            It is curated to support open research, civic planning, and data-driven decision-making in East Java.
         </p>
 
-        <div class="grid gap-8 mt-10 md:grid-cols-2">
-            <div class="p-6 bg-white rounded-lg shadow">
-                <h3 class="mb-2 text-lg font-semibold text-blue-600">Our Mission</h3>
-                <p class="text-gray-600">To promote transparency and innovation by empowering individuals
-                    and organizations with open data resources.</p>
+        <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+            <div class="p-6 transition duration-300 bg-white rounded-lg shadow hover:shadow-lg">
+                <h3 class="mb-2 text-lg font-bold text-blue-600">CSV Format</h3>
+                <p class="mb-4 text-gray-600">For spreadsheet and data analysis tools.</p>
+                <a href="{{ asset('datasets/population_2024.csv') }}" download
+                   class="inline-block px-4 py-2 text-sm font-semibold text-white bg-blue-600 rounded hover:bg-blue-700">
+                    Download CSV
+                </a>
             </div>
-            <div class="p-6 bg-white rounded-lg shadow">
-                <h3 class="mb-2 text-lg font-semibold text-blue-600">Our Vision</h3>
-                <p class="text-gray-600">To become the leading open data platform that bridges the gap
-                    between information and actionable insights.</p>
+
+            <div class="p-6 transition duration-300 bg-white rounded-lg shadow hover:shadow-lg">
+                <h3 class="mb-2 text-lg font-bold text-blue-600">JSON Format</h3>
+                <p class="mb-4 text-gray-600">Structured format for developers & APIs.</p>
+                <a href="{{ asset('datasets/population_2024.json') }}" download
+                   class="inline-block px-4 py-2 text-sm font-semibold text-white bg-green-600 rounded hover:bg-green-700">
+                    Download JSON
+                </a>
+            </div>
+
+            <div class="p-6 transition duration-300 bg-white rounded-lg shadow hover:shadow-lg">
+                <h3 class="mb-2 text-lg font-bold text-blue-600">Excel Format</h3>
+                <p class="mb-4 text-gray-600">Spreadsheet version for offline use.</p>
+                <a href="{{ asset('datasets/population_2024.xlsx') }}" download
+                   class="inline-block px-4 py-2 text-sm font-semibold text-white bg-indigo-600 rounded hover:bg-indigo-700">
+                    Download XLSX
+                </a>
+            </div>
+
+            <div class="p-6 transition duration-300 bg-white rounded-lg shadow hover:shadow-lg">
+                <h3 class="mb-2 text-lg font-bold text-blue-600">PDF Summary</h3>
+                <p class="mb-4 text-gray-600">Quick summary with key highlights.</p>
+                <a href="{{ asset('datasets/population_2024.pdf') }}" download
+                   class="inline-block px-4 py-2 text-sm font-semibold text-white bg-purple-600 rounded hover:bg-purple-700">
+                    Download PDF
+                </a>
             </div>
         </div>
-    </section>
-            <script>
-        const menuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
 
-        menuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-    </script>
+        <div class="mt-12 text-gray-700">
+            <p>
+                Each file is hosted under the <code>/public/datasets</code> directory and can be freely accessed for research,
+                academic, or civic purposes. Attribution to <strong>Surabaya City Open Data Initiative</strong> is appreciated.
+            </p>
+        </div>
+    </main>
+
 </body>
 </html>
